@@ -1,0 +1,178 @@
+/*開始css*/
+/*開始css*/
+.wrap{}
+a:hover{opacity: 0.5;transition: all 0.3s;}
+/* 通用css */
+.d-none{display: none;}
+.d-block{display: block;}
+.d-flex{display: flex;}
+.flex-direction-column-reverse{flex-direction: column-reverse;}
+.justify-content-center{justify-content: center;}
+.justify-content-between{justify-content: space-between;}
+.flex-wrap{flex-wrap: wrap;}
+.align-items-center{align-items: center;}
+.container-1774{
+  max-width: 1774px;
+	width: 90%;
+  margin: 0 auto;
+  @include phone{
+    width: 100%;
+  }
+}
+.container{
+  max-width: 1200px;
+	width: 80%;
+  margin: 0 auto;
+  @include phone{
+    width: 90%;
+  }
+}
+
+.primary-bg{background-color: #AA0601;}
+.secondary-bg{background-color: #fff;}
+
+.phoneOp-pcClose{
+  display: none;
+  @include phone{
+    display: block;
+  }
+}
+
+.color-primary{color:#AA0601;}
+.color-w{color: #fff;}
+.color-w a{color: #fff;}
+
+
+.fz-80{font-size: 5em;}
+.fz-64{font-size: 4em;}
+.fz-36{font-size: 2.25em;}
+.fz-32{font-size: 2.2em;}
+.fz-24{font-size: 1.5em;}
+.fz-20{font-size: 1.25em;}
+
+.fz-14{font-size: 0.875em;}
+.fw-400{font-weight: 400;}
+.fw-700{font-weight: 700;}
+
+.lh-15{line-height: 1.5;}
+
+.px-1{padding-top:1em;padding-bottom: 1em;}
+
+.mb-16{margin-bottom: 1em;}
+.mb-32{margin-bottom: 2em;}
+.ml-5{margin-left: 0.3125em;}
+.ml-32{margin-left: 2em;}
+
+
+
+.phone-m0{
+  @include phone{
+    margin: 0;
+  }
+}
+.absolute-br{
+  @include a-br(1em,1em)
+}
+
+.border-0{border: 0;}
+
+.text-center{text-align: center;}
+
+.li-mx-16>li{
+  margin-top: 1em; margin-bottom: 1em;
+}
+
+.li-mx-32>li{
+  margin-left: 1em; margin-right: 1em;
+  @include phone{
+    margin-left: 0.5em; margin-right: 0.5em;
+  }
+}
+
+
+.phone-column{
+  @include phone{
+    flex-direction:column;
+  }
+}
+.phone-flex-start{
+  @include phone{
+    align-items: start;
+  }
+}
+/*個別css*/
+.header{
+  padding:30px 0px;
+  @include phone{
+    padding: 10px 0px 0px;
+  }
+}
+.logo{width: 80px;}
+.navber ul li{
+  padding: 0px 32px;
+  @include pad{
+    padding: 0px 20px;
+  }
+}
+@include phone{
+  .navber{
+    flex-direction: column;
+  
+  }
+  .navber  ul{
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .navber  ul li{
+    width: 50%;
+    border: 1px solid #fff;
+    padding:8px;
+  }
+    
+}
+
+.footer{
+  @include pad{
+    font-size: 12px;
+  }
+  @include phone{
+    font-size: 7px;
+  }
+}
+.phone-no{
+  @include phone{
+    display: none;
+  }
+}
+
+// banner
+.banner{
+  background:url(../images/kv.png) no-repeat center center;
+  // background-size: 100%;
+  height: 304px;
+  @include phone{
+    background-size: cover;
+    height: 143px;
+    font-size: 7px;
+  }
+}
+
+.main{
+  padding: 5em 0px 6.25em;
+  @include phone{
+    font-size: 14px;
+  }
+}
+
+.pc-ml{
+  margin-left: 4em;
+  @include phone{
+    margin-left: 0em;
+  }
+}
+.main h2{
+  @include phone{
+    font-size: 1.43em;
+  }
+}

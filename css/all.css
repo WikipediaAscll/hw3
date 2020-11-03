@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/*匯入其他字體*/
+/*@font-face {
+  font-family: ApivitaAsty;
+  src: url(../font/ApivitaAsty-Medium.woff);
+}*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+  /*	-webkit-box-sizing:border-box;
+  	-moz-box-sizing:border-box;*/
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  line-height: 1.3;
+  letter-spacing: 1.3px;
+  outline: none;
+  /*google思源字體*/
+  font-family: "Noto Sans TC", Arial;
+  /*google思源宋體*/
+  /*font-family: 'Noto Serif TC';*/
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*img {width:100%;height:auto;}*/
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*開始css*/
+/*開始css*/
+a:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+/* 通用css */
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.container-1774 {
+  max-width: 1774px;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .container-1774 {
+    width: 100%;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.primary-bg {
+  background-color: #AA0601;
+}
+
+.secondary-bg {
+  background-color: #fff;
+}
+
+.phoneOp-pcClose {
+  display: none;
+}
+@media (max-width: 767px) {
+  .phoneOp-pcClose {
+    display: block;
+  }
+}
+
+.color-primary {
+  color: #AA0601;
+}
+
+.color-w {
+  color: #fff;
+}
+
+.color-w a {
+  color: #fff;
+}
+
+.fz-80 {
+  font-size: 5em;
+}
+
+.fz-64 {
+  font-size: 4em;
+}
+
+.fz-36 {
+  font-size: 2.25em;
+}
+
+.fz-32 {
+  font-size: 2.2em;
+}
+
+.fz-24 {
+  font-size: 1.5em;
+}
+
+.fz-20 {
+  font-size: 1.25em;
+}
+
+.fz-14 {
+  font-size: 0.875em;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.lh-15 {
+  line-height: 1.5;
+}
+
+.px-1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.mb-16 {
+  margin-bottom: 1em;
+}
+
+.mb-32 {
+  margin-bottom: 2em;
+}
+
+.ml-5 {
+  margin-left: 0.3125em;
+}
+
+.ml-32 {
+  margin-left: 2em;
+}
+
+@media (max-width: 767px) {
+  .phone-m0 {
+    margin: 0;
+  }
+}
+
+.absolute-br {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.border-0 {
+  border: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.li-mx-16 > li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.li-mx-32 > li {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+@media (max-width: 767px) {
+  .li-mx-32 > li {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  .phone-column {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .phone-flex-start {
+    align-items: start;
+  }
+}
+
+/*個別css*/
+.header {
+  padding: 30px 0px;
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 10px 0px 0px;
+  }
+}
+
+.logo {
+  width: 80px;
+}
+
+.navber ul li {
+  padding: 0px 32px;
+}
+@media (max-width: 992px) {
+  .navber ul li {
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navber {
+    flex-direction: column;
+  }
+
+  .navber ul {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navber ul li {
+    width: 50%;
+    border: 1px solid #fff;
+    padding: 8px;
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 767px) {
+  .phone-no {
+    display: none;
+  }
+}
+
+.banner {
+  background: url(../images/kv.png) no-repeat center center;
+  height: 304px;
+}
+@media (max-width: 767px) {
+  .banner {
+    background-size: cover;
+    height: 143px;
+    font-size: 7px;
+  }
+}
+
+.main {
+  padding: 5em 0px 6.25em;
+}
+@media (max-width: 767px) {
+  .main {
+    font-size: 14px;
+  }
+}
+
+.pc-ml {
+  margin-left: 4em;
+}
+@media (max-width: 767px) {
+  .pc-ml {
+    margin-left: 0em;
+  }
+}
+
+@media (max-width: 767px) {
+  .main h2 {
+    font-size: 1.43em;
+  }
+}
